@@ -1,4 +1,6 @@
-/* When the user clicks on the button,
+/* --------BUSCADOR-----------------------
+
+When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -22,7 +24,7 @@ function myFunction() {
   const removeAccents = (str) => {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   } 
-
+/* ----------PDFS INTERACTIVOS------------*/ 
 const diaf1 = new Vue({
     el: '#mostrarpdfs',
     data: {
