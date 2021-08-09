@@ -23,13 +23,17 @@ function myFunction() {
   }
   const removeAccents = (str) => {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  } 
+  } ;
+
+
 /* ----------PDFS INTERACTIVOS------------*/ 
+
+
 const diaf1 = new Vue({
     el: '#mostrarpdfs',
     data: {
       rutapdf: "../default.pdf",
-      carpeta:"001- MAE Politicas y Administracion de la Educacion",
+      carpeta:"",
       tituloo:"Seleccione la Normativa que desea previsualizar"},
     methods: {
         cambiarcarpeta : function(y){

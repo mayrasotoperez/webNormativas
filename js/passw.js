@@ -1,4 +1,4 @@
-var N="x";
+/*var N="x";
 
 do {
 	N = prompt("Ingrese la contraseña");
@@ -6,4 +6,4 @@ do {
     if(N != "untrefpos"){
         alert("[Error] La contraseña es incorrecta");}
 
-    } while(N != "untrefpos");
+    } while(N != "untrefpos");*/

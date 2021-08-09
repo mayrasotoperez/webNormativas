@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNTREF-Normativas-Posgrados</title>
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/2ea23a4859.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+
+<body>
+    <header>
+      <div id="encabezado">
+        <h1>Normativas - Untref Posgrados</h1>
+        <a  href="../index.html"><img id="logo" src="../img/untref_logo.jpg" alt="UNTREF - Normativas"></a>
+      </div>
+
+      <br><br>
+
+        <a href="../index.html"><button id="VolverInicio">Volver</button></a>
+
+    </header>
+
+    <br><br>
+    
+    <section id=mostrarpdfs>
+
+      
+      <!-- CARPETA CON NORMATIVAS -->
+      <div id=mostrarpdfs1 v-bind="cambiarcarpeta(`002- MAE Generacion y Analisis de Informacion Estadistica`)">
+
+        <!-- CODIGO - NOMBRE DE LA CARRERA -->
+        <h2>P00002 - Maestría en Generación y Análisis de Información Estadística</h2>
+
+        <!-- CADA BOTON CON EL NOMBRE DE ARCHIVO DE LA NORMATIVA -->
+        <button v-on:click="cambiarpdf(`01- RCS 012-02 - UNTREF Resol de Creacion`)" >01- RCS 012-02 - UNTREF Resol de Creacion</button><br>
+        <button v-on:click="cambiarpdf(`01- RCS 033-15 - Modificacion plan de estudios`)" >01- RCS 033-15 - Modificacion plan de estudios</button><br>
+        <button v-on:click="cambiarpdf(`01- RCS 036-11 - UNTREF  Modificacion Creacion - Plan - Regl`)" >01- RCS 036-11 - UNTREF  Modificacion Creacion - Plan - Regl</button><br>
+        <button v-on:click="cambiarpdf(`02 - RES 579-19 - MAE Estadistica`)" >02 - RES 579-19 - MAE Estadistica</button><br>
+        <button v-on:click="cambiarpdf(`02- RES 064-03 - CONEAU Acreditacion 2003`)" >02- RES 064-03 - CONEAU Acreditacion 2003</button><br>
+        <button v-on:click="cambiarpdf(`02- RES 988-12 - CONEAU`)" >02- RES 988-12 - CONEAU</button><br>
+        <button v-on:click="cambiarpdf(`03- RME 1027-03 - MINISTERIO Mg Generacion y Analisis Info Estad`)" >03- RME 1027-03 - MINISTERIO Mg Generacion y Analisis Info Estad</button><br>
+        
+      </div>
+
+      <!-- NO TOCAR, SE MUESTRA AUTOMATICAMENTE TODO -->
+      <div id=mostrarpdfs2>
+          <h3>{{tituloo}}</h3>
+          <iframe :src="rutapdf" style="width:100%; height:50rem;" frameborder="0" ></iframe>
+      </div>
+
+  </section>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
+
