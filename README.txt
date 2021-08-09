@@ -32,7 +32,7 @@ A. Ingresar una nueva carrera
 		c. Modificar los nombres de las normativas siguientes de la misma 
 		   forma que en a.
 	10. Guardar 
-	11. Abrir el archivo index.html
+	11. Abrir el archivo menu.html
 	12. En este archivo se muestra un Menu con todas las carreras que hay
 	    en UNTREF Posgrados. 
 		Copiar el renglón de la última Carrera y pegarlo por debajo de ella.
