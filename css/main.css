@@ -46,6 +46,11 @@ body{
 
 
 }
+/*
+#cualquierError{
+
+}
+*/
 
 
 /*---------------HEADINGS------------
@@ -66,7 +71,11 @@ h3{
   font-size: 1.5em;
   color: #aaa;
 }
-
+h6{
+  font-family: 'Distefano-Sans';
+  font-size: 1.5em;
+  color: #aaa;
+}
 
 
 /*---------------Botones------------
