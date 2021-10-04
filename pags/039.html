@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNTREF-Normativas-Posgrados</title>
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/2ea23a4859.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+
+<body>
+    <header>
+      <div id="encabezado">
+        <h1>Normativas - Untref Posgrados</h1>
+        <a  href="../menu.html"><img id="logo" src="../img/untref_logo.jpg" alt="UNTREF - Normativas"></a>
+      </div>
+
+      <br><br>
+
+        <a href="../menu.html"><button id="VolverInicio">Volver</button></a>
+
+    </header>
+ 
+    <br><br>
+    
+    <section id=mostrarpdfs>
+
+      
+      <!-- CARPETA CON NORMATIVAS -->
+      <div id=mostrarpdfs1 v-bind="cambiarcarpeta(`001- MAE Politicas y Administracion de la Educacion`)">
+        
+        <!-- CODIGO - NOMBRE DE LA CARRERA -->
+        <h2>P00001 - Maestría en Políticas y Administración de la Educación</h2>
+
+        <!-- CADA BOTON CON EL NOMBRE DE ARCHIVO DE LA NORMATIVA -->
+        <button v-on:click="cambiarpdf(`01- RCS 005-16 - UNTREF`)" >01- RCS 005-16 - UNTREF</button><br>
+        <button v-on:click="cambiarpdf(`01- RCS 395-98 - UNTREF`)" >01- RCS 395-98 - UNTREF</button><br>
+        <button v-on:click="cambiarpdf(`02- RES 408-99 - CONEAU`)" >02- RES 408-99 - CONEAU</button><br>
+        <button v-on:click="cambiarpdf(`02- RES 092-08 - CONEAU Maestria PAE`)" >02- RES 092-08 - CONEAU Maestria PAE</button><br>
+        <button v-on:click="cambiarpdf(`02- RES 308-08 - CONEAU`)" >02- RES 308-08 - CONEAU</button><br>
+        <button v-on:click="cambiarpdf(`02- RES 347-13 - Categoria B - CONEAU`)" >02- RES 347-13 - Categoria B - CONEAU</button><br>
+        <button v-on:click="cambiarpdf(`03- RM 1662-99 - MINISTERIO`)" >03- RM 1662-99 - MINISTERIO</button><br>
+        <button v-on:click="cambiarpdf(`03- RM 3350-17 - MINISTERIO`)" >03- RM 3350-17 - MINISTERIO</button><br>
+          
+      </div>
+
+      <!-- NO TOCAR, SE MUESTRA AUTOMATICAMENTE TODO -->
+      <div id=mostrarpdfs2>
+          <h3>{{tituloo}}</h3>
+          <iframe :src="rutapdf" style="width:100%; height:50rem;" frameborder="0" ></iframe>
+      </div>
+
+  </section>
+
+  <script src="../js/main.js" ></script>
+</body>
+
+</html>
+
